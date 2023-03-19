@@ -1,0 +1,24 @@
+/* @media (max-width: 500px) {
+	.container {
+		gap: 15px;
+		background-color: red;
+	}
+}
+@media (min-width: 900px) {
+	.container {
+		gap: 50px;
+	}
+} */
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-areas:
+	'a a a'
+	'a a a'
+	'a a a'
+	;
+	justify-content: center;
+	align-content: center;
+}
