@@ -1,35 +1,24 @@
-/* @media (max-width: 500px) {
-	.item {
-		width: 50px;
-		height: 50px;
-		font-size: 2em;
-	}
-}
-@media (min-width: 900px) {
-	.item {
-		width: 150px;
-		height: 150px;
-		font-size: 5em;
-	}
-} */
 
 :root {
 	--index: 1vw + 1vh;
 }
 
 .item {
-	background-color: #fff;
+	background-color: #000;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-family: sans-serif;
 	color: black;
-	transition: background-color .2s ease-in-out, color .2s ease-in-out;
+	transition: background-color .2s ease-in-out;
 	border-radius: 10px;
+	user-select: none;
+	text-shadow: 1px 1px 1em currentColor, 0 0 .2em currentColor, 0 0 2em currentColor;
+	z-index: 1;
+	box-shadow: 0 0 30px 1px var(--colorBg) !important;
 }
 
 .item:hover {
-	background-color: black;
-	color: #fff;
+	background-color: var(--colorBg);
 }

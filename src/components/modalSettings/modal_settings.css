@@ -1,0 +1,100 @@
+.modal__settings {
+	position: fixed;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 2;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .2s ease-in-out;
+}
+
+.m_settings__container {
+	width: 800px;
+	background-color: black;
+	font-family: sans-serif;
+	border-radius: 20px;
+	border: 10px ridge orangered;
+	padding: 10px;
+}
+
+.m_color {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+}
+
+.m_color h1 {
+	font-size: 2em;
+	white-space: nowrap;
+}
+
+.color_in {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+}
+
+.color_in h3 {
+	font-size: 1.5em;
+}
+
+.m_bg-video__func {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	flex-direction: column;
+	
+	color: white;
+}
+
+.m_bg-video__func input {
+	width: 25px;
+	height: 25px;
+}
+
+.m_settings_btn_close {
+	display: flex;
+	justify-content: end;
+	align-items: end;
+}
+
+.m_settings_btn_close button {
+	width: 150px;
+	height: 50px;
+	font-size: 1.5em;
+	font-weight: 500;
+	font-family: sans-serif;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	transition: color .2s ease-in-out, background-color .2s ease-in-out, border .2s ease-in-out, ;
+	margin: 20px;
+}
+
+.m_settings_btn_close button:hover {
+	
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+}
+
+.m_whoIsNext {
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.who_cont {
+	display: flex;
+	flex-direction: row;
+}
